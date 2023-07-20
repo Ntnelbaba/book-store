@@ -1,0 +1,8 @@
+<app-book 
+*ngFor="let book of books"
+[book]="book"
+[buttonText]="'Add'"
+[buttonColor]="'green'"
+(buttonClicked)="booksService.addToCart($event)"
+>
+</app-book>

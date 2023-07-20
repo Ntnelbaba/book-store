@@ -1,0 +1,10 @@
+<div *ngIf="book">
+    <h2>{{ book.title }}</h2>
+    <img [src]="book.src" [alt]="book.alt" width="200" height="200"/>
+    <p>{{ book.desc }}</p>
+    <button mat-button 
+    *ngIf="buttonText"
+    [style.color]="buttonColor" 
+    (click)="buttonClicked.emit(book)"
+    >{{buttonText}}</button>
+</div>
