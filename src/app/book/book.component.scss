@@ -1,0 +1,77 @@
+h2 {
+    color: darkolivegreen;
+    font-size: medium;
+    text-align: center;
+    height: 60px;
+}
+
+.image-div-inner{
+    height: 200px;
+}
+
+.image-div-outer{
+    height: 200px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    color: darkslategray;
+    width: 200px;
+    height: 150px;
+
+}
+
+.description {
+    height: 180px;
+    /*Overflow-y: scroll;*/
+
+}
+
+.multiline-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8; /* start showing ellipsis when 8th linev(the last line) is reached */
+    white-space: pre-wrap; /* let the text wrap preserving spaces */
+  }
+
+.card-footer {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+.price {
+    color: darkolivegreen;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 240px;
+    height: 550px;
+    /* Black shadow with 10px blur */
+    box-shadow: 0 0 20px #65604d;
+}

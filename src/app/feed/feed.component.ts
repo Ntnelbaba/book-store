@@ -8,5 +8,5 @@ import { BooksService } from '../books.service';
 })
 export class FeedComponent {
   booksService = inject(BooksService);
-  books = this.booksService.books;
+  booksList = this.booksService.booksList;
 }

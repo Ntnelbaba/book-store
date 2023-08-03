@@ -1,8 +1,12 @@
-<app-book 
-*ngFor="let book of books"
-[book]="book"
-[buttonText]="'Add'"
-[buttonColor]="'green'"
-(buttonClicked)="booksService.addToCart($event)"
->
-</app-book>
+<app-search></app-search>
+
+<div class="book-feed">
+    <app-book 
+    *ngFor="let book of (booksList | async)"
+    [book]="book"
+    [buttonText]="'Add to Cart'"
+    [buttonColor]="'green'"
+    (buttonClicked)="booksService.addToCart($event)"
+    >
+    </app-book>
+</div>

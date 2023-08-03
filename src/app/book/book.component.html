@@ -1,10 +1,23 @@
-<div *ngIf="book">
-    <h2>{{ book.title }}</h2>
-    <img [src]="book.src" [alt]="book.alt" width="200" height="200"/>
-    <p>{{ book.desc }}</p>
-    <button mat-button 
-    *ngIf="buttonText"
-    [style.color]="buttonColor" 
-    (click)="buttonClicked.emit(book)"
-    >{{buttonText}}</button>
+<div class="book-card" *ngIf="book">
+    <div class="card-header">
+        <h2>{{ book.title }}</h2>
+        <div class="image-div-outer">
+            <div class="image-div-inner" *ngIf="book.src">
+                <img [src]="book.src" [alt]="book.alt" width="200" height="200"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="description"> 
+        <p class="multiline-ellipsis">{{ book.desc }}</p> 
+    </div>
+    <div class="card-footer">
+        <p class="price">{{book.price}} shekel</p>
+        <button mat-button 
+        *ngIf="buttonText"
+        [style.color]="buttonColor" 
+        (click)="buttonClicked.emit(book)"
+        >{{buttonText}}</button>
+    </div>
 </div>
+

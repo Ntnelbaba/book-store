@@ -8,20 +8,24 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { CartComponent } from './cart/cart.component';
 import { BookComponent } from './book/book.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedComponent,
     CartComponent,
-    BookComponent
+    BookComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
