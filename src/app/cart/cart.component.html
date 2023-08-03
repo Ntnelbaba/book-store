@@ -1,4 +1,26 @@
-<app-book 
-*ngFor="let book of cart"
-[book]="book">
-</app-book>
+<div class="cart"  *ngIf="cart.length>0">
+    <div class="cart-feed">
+        <h3>Cart contents:</h3>
+        <div class="cart-header">
+            <p>Item</p>
+            <p>Price</p>
+        </div>
+    <div class="book-row" *ngFor="let book of cart">
+
+        <div class="row-start">
+            <div>
+                <div *ngIf="book.src">
+                    <img [src]="book.src" [alt]="book.alt" width="30" height="30"/>
+                </div>
+            </div>
+
+            <p>{{ book.title }}</p>
+        </div>
+            <p>{{ book.price }}</p>
+        </div>
+    
+        <div>
+            <p>Total items: {{cart.length}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+/* the :host is the component (page) that the cart is displayed inside */
+:host {
+    display: flex;
+    background-color: green;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 30px;
+    width: 340px;
+    height: 550px;
+    /* Black shadow with 10px blur */
+    box-shadow: 0 0 30px #020201;
+}
+
+.cart-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 90%;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.book-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.row-start {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 10px;
+}
