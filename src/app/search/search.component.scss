@@ -1,0 +1,27 @@
+input {
+    background-color: #d4d5ca;
+    font-size: small;
+    border-radius: 5px;
+    padding: 2px 2px 3px 5px;
+    /* remove inherited white outline displayed on clicking inside input: */
+    outline: none;
+}
+
+button {
+    background-color: darkgrey;
+    border-radius: 5px;
+    border-color: darkgoldenrod;
+    margin: 3px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
