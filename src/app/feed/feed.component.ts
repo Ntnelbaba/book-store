@@ -4,7 +4,7 @@ import { BooksService } from '../books.service';
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
-  styleUrls: ['./feed.component.scss']
+  styleUrls: ['./feed.component.scss'],
 })
 export class FeedComponent {
   booksService = inject(BooksService);
